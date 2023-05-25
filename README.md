@@ -1,4 +1,4 @@
-# Personal Website
+# Personal Project
 Raihan Allaam's personal project. Built using Vite, Vue JS, and Quasar Framework.
 
 1. Install Node js
