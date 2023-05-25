@@ -17,9 +17,9 @@
 			<q-btn flat rounded style="background: #fce7f3; color: #831843" label="List of Hobbies" icon="sym_r_interests" href="#" disable></q-btn><br />
 		</div>
 	</div>
-	<div class="fixed-bottom-right q-mr-md q-mb-md">
+	<div class="fixed-bottom-right" style="bottom: -6px;">
 		<a href="https://alamehan.github.io/" target="_blank">
-			<img src="../assets/memoji-alamehan.png" />
+			<img src="../assets/memoji-alamehan.png" style="width: 112px;"/>
 		</a>
 	</div>
 </template>

@@ -19,7 +19,7 @@ Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
 5. Install Quasar for Vite (Vite plugin for Quasar)
    > npm install quasar @quasar/extras
    > npm install -D @quasar/vite-plugin sass@1.32.12
-   > npm run dev
+   > npm run dev				(kalo mau expose: npm run dev -- --host) *pakai Network yang terakhir
 6. Konfigurasi Prettier
    - Masuk menu Settings, lalu ketik "Prettier: Single Quote", unceklis Jsx Single Quote & Single Quote, agar memakai kutip dua (") bukan satu (').
    - Masuk menu Settings, lalu ketik "Prettier: Print Width", isi dengan 999, agar saat Prettier merapikan code tidak buat baris baru, tetapi memanjang.

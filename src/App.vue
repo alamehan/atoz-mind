@@ -1,7 +1,7 @@
 <script>
 import Home from "./components/Home.vue";
-import Example from "./components/example/container.vue";
-import UserExperience from "./components/user-experience/container.vue";
+import Example from "./components/example/Container.vue";
+import UserExperience from "./components/user-experience/Container.vue";
 
 // SETUP ROUTING (https://vuejs.org/guide/scaling-up/routing.html)
 const routes = {
