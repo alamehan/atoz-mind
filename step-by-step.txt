@@ -1,0 +1,58 @@
+===========================================================================================
+Step by step membangun proyek ATOZ Mind by Raihan Allaam menggunakan Vite, Vue JS, Quasar
+===========================================================================================
+Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
+===========================================================================================
+1. Install Node js versi 18.16.0 (LTS)
+2. Install VS Code Extension
+   - Prettier code formatter
+   - Vue Language Features (Volar)
+   - Vue VSCode Snippets (gunakan snippets "vbase" saat membuat component baru) 
+3. Buat folder "my project"
+   - Lalu buka cmd di folder tersebut
+4. Install Vite
+   > npm create vite@4.3.5	(kalo yang terbaru: vite@latest)
+     - beri nama project : project_atoz_mind
+     - pilih teknologi	 : vue with javascript
+   > cd project_atoz_mind
+   > npm install
+5. Install Quasar for Vite (Vite plugin for Quasar)
+   > npm install quasar @quasar/extras
+   > npm install -D @quasar/vite-plugin sass@1.32.12
+   > npm run dev
+6. Konfigurasi Prettier
+   - Masuk menu Settings, lalu ketik "Prettier: Single Quote", unceklis Jsx Single Quote & Single Quote, agar memakai kutip dua (") bukan satu (').
+   - Masuk menu Settings, lalu ketik "Prettier: Print Width", isi dengan 999, agar saat Prettier merapikan code tidak buat baris baru, tetapi memanjang.
+   - Cara format dokumen: CTRL + SHIFT + P, lalu pilih Format Document with Prettier. Atau sebagai alternatif aktifkan fitur format on save.
+7. Setup awal
+   - ATUR						vite.config.js				gunakan template di: https://quasar.dev/start/vite-plugin/
+   - ATUR						src/main.js					gunakan template di: https://quasar.dev/start/vite-plugin/
+   - BUAT						src/quasar-variables.sass	gunakan template di: https://quasar.dev/start/vite-plugin/ + Add Google Fonts
+   - HAPUS						src/style.css				gak dipakai
+   - ATUR (Routing, dll)		src/App.vue					app container
+   - SIMPAN asset konten di		src/assets/..here..
+   - SIMPAN asset icon tree di	public/images/..here..		singkatnya biar gak error pas di components (contoh di --> avatar: "./icons-tree/general/title.png")
+   - BUAT components di			src/components/..here..		gunakan snippets "vbase"
+   - ATUR						index.html					atur favicon dan judul web disini
+8. Start coding
+   - Gunakan QTabPanels 							https://quasar.dev/vue-components/tab-panels
+   - Gunakan QSplitter 								https://quasar.dev/vue-components/splitter
+   - Gunakan Qtree with QSplitter and QTabPanels	https://quasar.dev/vue-components/tree#integrated-example
+   - Tambahkan beberapa fitur seperti: Search filter, Alert, Functionally Button & back to Home
+9. Production
+   - Problem: Built application shows blank page (https://stackoverflow.com/questions/72005194/vue-3-vite-built-application-shows-blank-page)
+   - Solution: Buka file "vite.config.js", tambahkan --> base: './' di dalam export default defineConfig
+    > npm run build
+10. Selesai
+===========================================================================================
+Read more:
+- https://quasar.dev/start/vite-plugin/
+- https://vuejs.org/guide/scaling-up/routing.html
+- Offline web apps bundled into a single HTML file that you can double-click and open directly in your web browser, no server needed.
+  > https://stackoverflow.com/questions/67031295/how-to-open-a-static-website-in-localhost-but-generated-with-vite-and-without-ru
+  > https://github.com/richardtallent/vite-plugin-singlefile
+===========================================================================================
+Note:
+- Link repository proyek ini: https://github.com/alamehan/atoz-mind
+- Setelah di build push ke: https://github.com/alamehan/alamehan.github.io
+- ATOZ Mind merupakan salah satu project Alamehan.github.io
