@@ -8,7 +8,7 @@ const tab = ref("tab_1"); // TAB YANG AKTIF (SELECTED) PERTAMA KALI
 </script>
 
 <template>
-	<q-card style="min-height: 100vh">
+	<q-card style="min-height: 100dvh"> <!-- Satuan dvh lebih akurat dibandingkan vh -->
 		<q-tabs v-model="tab" dense class="text-grey" active-color="primary" indicator-color="primary" align="justify">
 			<q-tab name="tab_1" label="Learn UX Today" />
 			<q-tab name="tab_2" label="Design Thinking Toolbox" />
