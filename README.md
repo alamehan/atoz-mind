@@ -1,7 +1,7 @@
 # Personal Project
 Raihan Allaam's personal project. Built using Vite, Vue JS, and Quasar Framework.
 
-1. Install [Git](https://git-scm.com/[) & Node JS](https://nodejs.org/en)
+1. Install [Git](https://git-scm.com/) & [Node JS](https://nodejs.org/en)
 2. Open Command Prompt (cmd)
 3. Use the following command:
 
